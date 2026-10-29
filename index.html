@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factory Builder — MVP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="overlay">
+  <div id="topbar">
+    <div id="title">FACTORY BUILDER</div>
+    <div id="stats">Pos: (0, 0) &nbsp;|&nbsp; Mouse: (0, 0) &nbsp;|&nbsp; FPS: 0</div>
+    <div id="toolbar">
+      <button id="btnPause">Pause</button>
+      <button id="btnTech">Technology</button>
+      <button id="btnSave">Save</button>
+      <button id="btnLoad">Load</button>
+      <button id="btnNew">New Game</button>
+    </div>
+  </div>
+  <div id="help">WASD/Arrows: move &bull; Wheel: zoom &bull; Middle-drag: pan &bull; LMB: place / use &bull; RMB: remove / cancel &bull; 1&ndash;9: hotbar &bull; E: inventory &bull; R: rotate &bull; Esc: cancel</div>
+  <canvas id="game" tabindex="0"></canvas>
+  <div id="hotbar"></div>
+  <div id="msg"></div>
+  <div id="panelInventory" class="panel">
+    <div class="panel-title">Inventory <button class="panel-close" id="btnCloseInv">&times;</button></div>
+    <div class="panel-content" id="invContent"></div>
+    <div style="padding:6px 10px;font-size:12px;color:#8a90a0">Press E to close</div>
+  </div>
+  <div id="panelBuild" class="panel">
+    <div class="panel-title" id="buildTitle">Building <button class="panel-close" id="btnCloseBuild">&times;</button></div>
+    <div class="panel-content" id="buildContent"></div>
+  </div>
+  <div id="panelTech" class="panel">
+    <div class="panel-title">Technology <button class="panel-close" id="btnCloseTech">&times;</button></div>
+    <div class="panel-content" id="techContent"></div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
